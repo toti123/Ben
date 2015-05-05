@@ -26,7 +26,7 @@ public class JobProvider extends ContentProvider {
     private static final int TODOS = 10;
     private static final int TODO_ID = 20;
 
-    private static final String AUTHORITY = "com1032.cw1.kf00084_todilist.provider";
+    private static final String AUTHORITY = "com1032.cw1.kf00084.kf00084_todolist.provider";
 
     private static final String BASE_PATH = "todos";
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY
@@ -35,7 +35,7 @@ public class JobProvider extends ContentProvider {
     public static final String CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE
             + "/Jobs";
     public static final String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE
-            + "/Jobs";
+            + "/Job";
 
     private static final UriMatcher sURIMatcher = new UriMatcher(UriMatcher.NO_MATCH);
     static {
